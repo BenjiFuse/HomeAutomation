@@ -13,13 +13,6 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Properties;
 
-/*
-import java.net.URI;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
-*/
 
 public class MjpegInputStream extends DataInputStream {
     private final byte[] SOI_MARKER = {(byte) 0xFF, (byte) 0xD8};

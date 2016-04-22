@@ -29,6 +29,9 @@ public class SettingsActivity extends AppCompatActivity {
         final EditText ip = (EditText) findViewById(R.id.ip);
         ip.setText(Settings.getInstance().getURL());
 
+        final EditText cam_ip = (EditText) findViewById(R.id.cam_ip);
+        cam_ip.setText(Settings.getInstance().getCamURL());
+
         Button setURLBtn = (Button) findViewById(R.id.set_url);
         setURLBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,6 +41,14 @@ public class SettingsActivity extends AppCompatActivity {
             }
         });
 
+        Button setWebcamURLBTN = (Button) findViewById(R.id.set_cam_url);
+        setWebcamURLBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Settings.getInstance().setWebcamURL(ip.getText().toString());
+                Toast.makeText(c, "URL Set", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
 }

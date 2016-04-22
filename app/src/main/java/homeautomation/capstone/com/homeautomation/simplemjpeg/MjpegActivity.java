@@ -19,6 +19,7 @@ import org.apache.http.params.HttpConnectionParams;
 import org.apache.http.params.HttpParams;
 
 import homeautomation.capstone.com.homeautomation.R;
+import homeautomation.capstone.com.homeautomation.Settings;
 
 import java.io.IOException;
 import java.net.URI;
@@ -33,8 +34,8 @@ public class MjpegActivity extends Activity {
     // for settings (network and resolution)
     private static final int REQUEST_SETTINGS = 0;
 
-    private int width = 640;
-    private int height = 480;
+    private int width = 320;
+    private int height = 240;
 
     private int ip_ad1 = 192;
     private int ip_ad2 = 168;
@@ -80,6 +81,7 @@ public class MjpegActivity extends Activity {
         URL = new String(sb);
 
 
+        URL = Settings.getInstance().getCamURL();
         URL = new String("http://192.168.1.84:8081");
 
 

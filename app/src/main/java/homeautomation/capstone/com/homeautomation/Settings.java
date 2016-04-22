@@ -76,14 +76,22 @@ public class Settings {
     }
 
     private String URL = "https://192.168.0.106:5000/";
+    private String webcamURL = "http://192.168.1.84:8081";
 
     public void setURL(String val){
         URL = val;
         this.SyncToServer();
     }
+
+    public void setWebcamURL(String val) {
+        webcamURL = val;
+    }
+
     public String getURL(){
         return URL;
     }
+
+    public String getCamURL() { return webcamURL; }
 
     public String Encrypt(String m){
         return crypto.Encrypt(StrToByteArray(m));

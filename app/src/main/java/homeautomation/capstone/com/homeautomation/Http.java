@@ -30,12 +30,6 @@ public class Http {
             @Override
             public void run() {
                 try {
-                    System.setProperty("javax.net.ssl.trustStore", "HubServer.jks");
-          //          System.setProperty("javax.net.ssl.keyStore", "HubServer.jks");
-
-                    System.out.println("CURRENT TRUSTSTORE: " + System.getProperty("javax.net.ssl.trustStore"));
-
-
                     OkHttpClient client = new OkHttpClient();
                     RequestBody body = RequestBody.create(JSON, bodyRequest);
                     Request request = new Request.Builder()

@@ -10,7 +10,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="homeautomation.capstone.com.homeautomation.SettingsActivity"
-    tools:showIn="@layout/activity_settings">
+    tools:showIn="@layout/activity_settings"
+    android:orientation="vertical">
 
     <EditText
         android:layout_width="wrap_content"
@@ -23,6 +24,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/set_url_button"
-        android:layout_marginTop="94dp" />
+        android:layout_marginTop="4dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cam_ip"
+        android:inputType="text"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="40dp" />
+
+    <Button
+        android:id="@+id/set_cam_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/set_cam_url_button"
+        android:layout_marginTop="4dp" />
 
 </LinearLayout>

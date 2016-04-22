@@ -60,6 +60,10 @@
             android:name=".TemperatureActivity"
             android:label="@string/title_activity_temperature"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".simplemjpeg.MjpegActivity"
+            android:label="@string/title_activity_temperature"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

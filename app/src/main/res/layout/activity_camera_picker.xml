@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="homeautomation.capstone.com.homeautomation.CameraPickerActivity">
+    tools:context="homeautomation.capstone.com.homeautomation.CameraPickerActivity"
+    tools:showIn="@layout/content_camera_picker">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -22,5 +23,11 @@
     </android.support.design.widget.AppBarLayout>
 
     <include layout="@layout/content_camera_picker" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/camera1_button" />
 
 </android.support.design.widget.CoordinatorLayout>
