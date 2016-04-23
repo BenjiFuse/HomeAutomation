@@ -45,8 +45,8 @@ public class SettingsActivity extends AppCompatActivity {
         setWebcamURLBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Settings.getInstance().setWebcamURL(ip.getText().toString());
-                Toast.makeText(c, "URL Set", Toast.LENGTH_SHORT).show();
+                Settings.getInstance().setWebcamURL(cam_ip.getText().toString());
+                Toast.makeText(c, "Cam URL Set", Toast.LENGTH_SHORT).show();
             }
         });
     }

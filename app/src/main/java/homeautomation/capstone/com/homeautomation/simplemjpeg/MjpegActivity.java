@@ -82,7 +82,6 @@ public class MjpegActivity extends Activity {
 
 
         URL = Settings.getInstance().getCamURL();
-        URL = new String("http://192.168.1.84:8081");
 
 
         setContentView(R.layout.main);
